@@ -1,0 +1,9 @@
+{
+  "name": "PsycheBridge \u2014 Understand. Assess. Empower.",
+  "short_name": "PsycheBridge",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbf7ff",
+  "theme_color": "#7546a8",
+  "description": "A structured psychosocial developmental assessment workspace."
+}

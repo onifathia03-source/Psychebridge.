@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7546a8">
+<meta name="description" content="PsycheBridge — a warm, structured psychosocial developmental assessment workspace.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<title>PsycheBridge | Understand. Assess. Empower.</title>
+<style>
+:root{--lav:#eadcf9;--lilac:#c9afea;--purple:#7546a8;--deep:#43236f;--ink:#2c2040;--muted:#746783;--ivory:#fffaf6;--white:#fff;--beige:#f3e7d9;--line:#e9def2;--shadow:0 12px 34px rgba(83,48,119,.10)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fbf7ff,#fffaf6 70%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink)}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.side{background:#fff;border-right:1px solid var(--line);padding:25px 18px;display:flex;flex-direction:column;gap:22px}.brand{padding:10px 8px}.logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(145deg,var(--purple),#a77bd2);display:grid;place-items:center;color:white;font-size:25px;box-shadow:var(--shadow)}.brand h1{font-family:Georgia,serif;color:var(--deep);font-size:25px;margin:12px 0 3px}.tag{font-size:12px;color:var(--muted)}.nav{display:grid;gap:7px}.nav button{border:0;background:transparent;color:#58466d;text-align:left;padding:12px 13px;border-radius:13px;font-weight:650}.nav button.active,.nav button:hover{background:var(--purple);color:white}.owner{margin-top:auto;background:linear-gradient(135deg,#f0e3ff,#fff3e8);padding:17px;border-radius:18px;font-size:13px;line-height:1.5}.owner strong{color:var(--deep)}main{padding:28px;max-width:1400px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}.eyebrow{color:var(--purple);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.top h2{font: bold 32px Georgia,serif;margin:7px 0;color:var(--deep)}.top p{color:var(--muted);margin:0}.pill{background:#f0e5fb;color:var(--deep);border-radius:99px;padding:9px 13px;font-size:12px;font-weight:700}.hero{background:linear-gradient(110deg,#e8d7fa,#fff0e5);border:1px solid #e4d4f3;border-radius:25px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:var(--shadow);margin-bottom:20px}.hero h3{font: bold 29px Georgia,serif;color:var(--deep);margin:0 0 9px}.hero p{max-width:650px;color:#59496a;line-height:1.6;margin:0 0 17px}.heart{font-size:64px;opacity:.8}.btn{border:0;border-radius:13px;padding:11px 16px;background:var(--purple);color:#fff;font-weight:750;box-shadow:0 5px 14px #7546a833}.btn:hover{background:var(--deep)}.btn.secondary{background:#f1e7fb;color:var(--deep);box-shadow:none}.btn.ghost{background:white;color:var(--purple);border:1px solid var(--line);box-shadow:none}.btn.danger{background:#a64058}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:19px;box-shadow:var(--shadow)}.card h3{font: bold 19px Georgia,serif;color:var(--deep);margin:0 0 8px}.card p{color:var(--muted);line-height:1.5;font-size:14px}.stat{font: bold 30px Georgia,serif;color:var(--purple);margin-top:9px}.section{display:none}.section.active{display:block}.section-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:5px 0 17px}.section-title h2{font: bold 26px Georgia,serif;color:var(--deep);margin:0}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:750;color:#574568}.field input,.field select,.field textarea{width:100%;border:1px solid #dfd2ea;border-radius:11px;padding:11px 12px;background:#fff;color:var(--ink);outline-color:var(--lilac)}textarea{min-height:90px;resize:vertical}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.notice{background:#fff7e9;border:1px solid #f0dfc7;color:#6d563d;padding:13px 15px;border-radius:13px;font-size:13px;line-height:1.5;margin:14px 0}.info{background:#f5effc;border:1px solid #e6d9f3;padding:13px 15px;border-radius:13px;font-size:13px;line-height:1.5;color:#59466d}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:600px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:13px}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}td strong{color:var(--deep)}.stage{border:1px solid var(--line);border-radius:16px;padding:16px;margin:12px 0;background:#fff}.stagehead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.stage h4{margin:0;color:var(--deep);font: bold 17px Georgia,serif}.stage small{color:var(--muted)}.question{padding:13px 0;border-top:1px solid #f0e9f5;margin-top:12px}.question p{font-size:14px;font-weight:650;margin:0 0 9px}.options{display:flex;gap:8px;flex-wrap:wrap}.options label{border:1px solid #e5d9ee;border-radius:10px;padding:7px 10px;font-size:12px;cursor:pointer}.options input{accent-color:var(--purple)}.report{background:#fff;padding:24px;border:1px solid var(--line);border-radius:18px;line-height:1.65}.report h2,.report h3{font-family:Georgia,serif;color:var(--deep)}.empty{text-align:center;padding:30px;color:var(--muted)}.footer{margin-top:24px;text-align:center;color:#988ba5;font-size:11px}
+@media(max-width:850px){.shell{grid-template-columns:1fr}.side{padding:12px 14px;position:sticky;top:0;z-index:5;border-right:0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;padding:2px}.brand h1{font-size:20px;margin:0}.brand .tag{display:none}.logo{width:38px;height:38px}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap;padding:9px 11px;font-size:12px}.owner{display:none}main{padding:18px 14px}.top h2{font-size:26px}.hero{padding:21px}.hero h3{font-size:23px}.heart{display:none}.grid{grid-template-columns:1fr 1fr}.formgrid{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.hero{display:block}.hero h3{font-size:22px}}
+@media print{.side,.top,.actions,.no-print,.footer{display:none!important}main{padding:0}.section{display:none!important}#reportView{display:block!important}.report{border:0;box-shadow:none}.shell{display:block}body{background:white}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="side">
+ <div class="brand"><div class="logo">♡</div><div><h1>PsycheBridge</h1><div class="tag">Understand. Assess. Empower.</div></div></div>
+ <nav class="nav">
+  <button class="active" data-view="dashboard">⌂ Dashboard</button>
+  <button data-view="assessment">＋ New assessment</button>
+  <button data-view="clients">♧ My clients</button>
+  <button data-view="reports">▤ Reports</button>
+  <button data-view="resources">▧ Guide & resources</button>
+ </nav>
+ <div class="owner">Bridging minds, building better lives.<br><br><strong>Created and owned by Oni Fathia</strong></div>
+</aside>
+<main>
+<header class="top"><div><div class="eyebrow">Your psychosocial assessment workspace</div><h2 id="pageTitle">Welcome to PsycheBridge 💜</h2><p id="pageSub">A thoughtful space to understand the person behind the behaviour.</p></div><span class="pill">PRIVATE WORKSPACE</span></header>
+
+<section id="dashboard" class="section active">
+ <div class="hero"><div><h3>Understand the person behind the behaviour.</h3><p>Explore developmental experiences across the lifespan, record a client's perspective, identify strengths and areas for further exploration, and prepare a structured summary.</p><button class="btn" onclick="showView('assessment')">Start a new assessment →</button></div><div class="heart">♡</div></div>
+ <div class="grid">
+  <div class="card"><h3>My clients</h3><div class="stat" id="clientCount">0</div><p>Client profiles saved in this browser.</p></div>
+  <div class="card"><h3>Assessments</h3><div class="stat" id="assessmentCount">0</div><p>Completed or saved assessment records.</p></div>
+  <div class="card"><h3>Erikson's framework</h3><div class="stat">8 stages</div><p>Guided prompts from infancy through later adulthood.</p></div>
+ </div>
+ <div class="notice"><strong>Privacy reminder:</strong> This starter version stores records in this browser on this device. It is not an encrypted clinical records system or cloud backup. Use client codes or pseudonyms, avoid unnecessary identifying or highly sensitive information, and do not use it for real client records until an appropriate secure hosting, access-control, consent and data-protection setup is in place.</div>
+</section>
+
+<section id="assessment" class="section">
+ <div class="section-title"><h2>New psychosocial assessment</h2><span class="pill">Erikson-inspired guide</span></div>
+ <div class="info">Use these prompts as a semi-structured interview guide. Ask follow-up questions sensitively and adapt to the client's age, culture, language, context and readiness. These prompts are not a validated psychometric test and do not diagnose or establish that a stage was “failed.”</div>
+ <div class="card" style="margin-top:14px">
+  <div class="formgrid">
+   <div class="field"><label for="clientSelect">Select client</label><select id="clientSelect"><option value="">Choose an existing client</option></select></div>
+   <div class="field"><label for="assessmentDate">Assessment date</label><input id="assessmentDate" type="date"></div>
+   <div class="field full"><label for="purpose">Reason for assessment / referral question</label><textarea id="purpose" placeholder="What brings the client for assessment? What would this assessment help clarify?"></textarea></div>
+  </div>
+ </div>
+ <div id="stages"></div>
+ <div class="card">
+  <div class="formgrid">
+   <div class="field full"><label for="strengths">Client strengths and protective factors</label><textarea id="strengths" placeholder="Skills, supportive relationships, coping strategies, resources, aspirations..."></textarea></div>
+   <div class="field full"><label for="concerns">Current concerns / areas for further exploration</label><textarea id="concerns" placeholder="Describe concerns without labels or assumptions..."></textarea></div>
+   <div class="field full"><label for="observations">Worker's observations (distinguish observation from interpretation)</label><textarea id="observations" placeholder="Record observable information and the context..."></textarea></div>
+   <div class="field full"><label for="recommendations">Suggested next steps / referrals</label><textarea id="recommendations" placeholder="Further assessment, support, referral, safety planning, follow-up..."></textarea></div>
+  </div>
+  <div class="actions"><button class="btn" onclick="saveAssessment()">Save assessment & create report</button><button class="btn secondary" onclick="clearAssessment()">Clear form</button></div>
+ </div>
+</section>
+
+<section id="clients" class="section">
+ <div class="section-title"><h2>Client records</h2><button class="btn" onclick="openClientForm()">＋ Add client</button></div>
+ <div class="card" id="clientForm" style="display:none;margin-bottom:14px">
+  <h3>Add a client profile</h3>
+  <div class="notice">For privacy, use a client code or pseudonym rather than a full name wherever possible. Only collect details necessary for your work and with appropriate consent.</div>
+  <div class="formgrid">
+   <div class="field"><label>Client code / pseudonym *</label><input id="cCode" placeholder="e.g. PB-001"></div>
+   <div class="field"><label>Age (optional)</label><input id="cAge" type="number" min="0" max="120" placeholder="Age in years"></div>
+   <div class="field"><label>Pronouns (optional)</label><input id="cPronouns" placeholder="If volunteered"></div>
+   <div class="field"><label>Contact / case reference (optional)</label><input id="cRef" placeholder="Avoid sensitive identifiers"></div>
+   <div class="field full"><label>Brief context (optional)</label><textarea id="cContext" placeholder="Minimal relevant background information"></textarea></div>
+  </div>
+  <div class="actions"><button class="btn" onclick="saveClient()">Save client</button><button class="btn ghost" onclick="closeClientForm()">Cancel</button></div>
+ </div>
+ <div class="card"><div class="tablewrap" id="clientTable"></div></div>
+</section>
+
+<section id="reports" class="section">
+ <div class="section-title"><h2>Assessment reports</h2><button class="btn secondary" onclick="exportBackup()">Export data backup</button></div>
+ <div id="reportsList" class="grid"></div>
+</section>
+
+<section id="reportView" class="section">
+ <div class="section-title no-print"><h2>Assessment report</h2><div class="actions"><button class="btn" onclick="window.print()">Print / Save as PDF</button><button class="btn secondary" onclick="showView('reports')">Back to reports</button></div></div>
+ <div id="reportContent" class="report"></div>
+</section>
+
+<section id="resources" class="section">
+ <div class="section-title"><h2>Guide & resources</h2></div>
+ <div class="grid">
+  <div class="card"><h3>Trust vs. mistrust</h3><p>Explore early experiences of safety, consistency, caregiving and trust.</p></div>
+  <div class="card"><h3>Autonomy vs. shame and doubt</h3><p>Explore independence, choice, self-control and responses to mistakes.</p></div>
+  <div class="card"><h3>Initiative vs. guilt</h3><p>Explore initiative, play, curiosity, responsibility and encouragement.</p></div>
+  <div class="card"><h3>Industry vs. inferiority</h3><p>Explore learning, competence, school experiences, feedback and belonging.</p></div>
+  <div class="card"><h3>Identity vs. role confusion</h3><p>Explore identity, values, roles, belonging and future aspirations.</p></div>
+  <div class="card"><h3>Intimacy vs. isolation</h3><p>Explore closeness, trust, mutuality, friendships and relationships.</p></div>
+  <div class="card"><h3>Generativity vs. stagnation</h3><p>Explore contribution, caregiving, work, mentoring and purpose.</p></div>
+  <div class="card"><h3>Integrity vs. despair</h3><p>Explore life reflection, meaning, acceptance, regret and legacy.</p></div>
+ </div>
+ <div class="notice"><strong>Practice note:</strong> Erikson's stages are broad theoretical themes, not a rigid checklist. People may revisit themes throughout life. Interpret responses alongside the client's current environment, culture, relationships, strengths, trauma history where appropriately disclosed, and their own understanding of events. Seek supervision when risk, safeguarding, mental health or legal issues arise.</div>
+</section>
+<div class="footer">PsycheBridge · Understand. Assess. Empower. · Created and owned by Oni Fathia</div>
+</main></div>
+<script>
+const stageData=[
+["Trust vs. Mistrust","Infancy (approximately 0–1 year)",["When you think about the people who cared for you early in life, what do you remember about feeling safe and cared for?","How easy or difficult is it for you to rely on other people today?","What helps you feel safe when you are under stress?"]],
+["Autonomy vs. Shame and Doubt","Early childhood (approximately 1–3 years)",["Growing up, were you encouraged to try things and make age-appropriate choices?","How do you usually feel when you make a mistake or need help?","How comfortable are you expressing your preferences and making decisions now?"]],
+["Initiative vs. Guilt","Preschool years (approximately 3–6 years)",["Were your questions, ideas and attempts to start activities encouraged?","What happened when you made a mistake or tried something new?","How comfortable are you taking initiative or expressing an idea today?"]],
+["Industry vs. Inferiority","School age (approximately 6–12 years)",["What were your experiences of learning, school or developing skills?","Did you feel recognised for your efforts? What messages did you receive about your abilities?","How do you respond when you compare your achievements with other people's?"]],
+["Identity vs. Role Confusion","Adolescence (approximately 12–18 years)",["What experiences helped shape your sense of who you are?","Were you able to explore your interests, values and goals?","Are there roles, expectations or pressures that make it difficult to express who you are?"]],
+["Intimacy vs. Isolation","Young adulthood (approximately 18–40 years)",["What makes it easier or harder for you to build trusting, close relationships?","How do you balance closeness with your need for independence?","When you need support, who can you approach and what makes that feel safe or unsafe?"]],
+["Generativity vs. Stagnation","Middle adulthood (approximately 40–65 years)",["In what ways do you feel you contribute to other people or your community?","Are there responsibilities, roles or activities that give you a sense of purpose?","Is there anything you wish you had more opportunity to teach, create or contribute?"]],
+["Integrity vs. Despair","Later adulthood (approximately 65 years and above)",["When you reflect on your life, what experiences feel most meaningful to you?","How do you make sense of difficult experiences, changes or regrets?","What gives you connection, purpose or hope at this stage of life?"]]
+];
+let clients=JSON.parse(localStorage.getItem("pb_clients")||"[]");
+let assessments=JSON.parse(localStorage.getItem("pb_assessments")||"[]");
+let currentReport=null;
+const $=id=>document.getElementById(id);
+function persist(){localStorage.setItem("pb_clients",JSON.stringify(clients));localStorage.setItem("pb_assessments",JSON.stringify(assessments));}
+function showView(id){document.querySelectorAll(".section").forEach(s=>s.classList.remove("active"));$(id).classList.add("active");document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===id));let titles={dashboard:["Welcome to PsycheBridge 💜","A thoughtful space to understand the person behind the behaviour."],assessment:["New assessment","Explore developmental experiences with care and curiosity."],clients:["My clients","Manage pseudonymous client profiles."],reports:["Reports","Review, print or export assessment summaries."],resources:["Guide & resources","A quick reference to the eight psychosocial themes."],reportView:["Assessment report","A structured summary of the saved assessment."]};$("pageTitle").textContent=titles[id][0];$("pageSub").textContent=titles[id][1];renderAll();window.scrollTo({top:0,behavior:"smooth"});}
+document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>showView(b.dataset.view)));
+function buildStages(){let html="";stageData.forEach((s,i)=>{html+=`<div class="stage"><div class="stagehead"><div><h4>${i+1}. ${s[0]}</h4><small>${s[1]}</small></div><span class="pill">Reflection</span></div>`;s[2].forEach((q,j)=>{html+=`<div class="question"><p>${q}</p><div class="options">${["Not explored","Client reports positive experience","Mixed / varies","Client reports difficulty","Prefer not to answer"].map((o,k)=>`<label><input type="radio" name="s${i}q${j}" value="${o}"> ${o}</label>`).join("")}</div><textarea id="note_${i}_${j}" placeholder="Optional context / client's own words" style="margin-top:9px;min-height:55px"></textarea></div>`});html+="</div>"});$("stages").innerHTML=html;}
+function refreshSelect(){let sel=$("clientSelect"),v=sel.value;sel.innerHTML='<option value="">Choose an existing client</option>'+clients.map(c=>`<option value="${c.id}">${esc(c.code)}</option>`).join("");if(clients.some(c=>c.id===v))sel.value=v;}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function openClientForm(){$("clientForm").style.display="block"}
+function closeClientForm(){$("clientForm").style.display="none"}
+function saveClient(){let code=$("cCode").value.trim();if(!code){alert("Please enter a client code or pseudonym.");return}if(clients.some(c=>c.code.toLowerCase()===code.toLowerCase())){alert("That client code already exists.");return}clients.push({id:crypto.randomUUID(),code,age:$("cAge").value,pronouns:$("cPronouns").value,ref:$("cRef").value,context:$("cContext").value,created:new Date().toISOString()});["cCode","cAge","cPronouns","cRef","cContext"].forEach(id=>$(id).value="");closeClientForm();persist();renderAll();}
+function deleteClient(id){if(!confirm("Delete this client profile? Existing assessment reports will remain."))return;clients=clients.filter(c=>c.id!==id);persist();renderAll();}
+function renderClients(){$("clientTable").innerHTML=clients.length?`<table><thead><tr><th>Client code</th><th>Age</th><th>Added</th><th>Action</th></tr></thead><tbody>${clients.map(c=>`<tr><td><strong>${esc(c.code)}</strong></td><td>${esc(c.age||"—")}</td><td>${new Date(c.created).toLocaleDateString()}</td><td><button class="btn ghost" onclick="deleteClient('${c.id}')">Delete</button></td></tr>`).join("")}</tbody></table>`:'<div class="empty">No client profiles yet. Add a client using a code or pseudonym to begin.</div>'}
+function saveAssessment(){let cid=$("clientSelect").value;if(!cid){alert("Please select a client first. Add one in My clients if needed.");return}let answers=[];stageData.forEach((s,i)=>{let qs=[];s[2].forEach((q,j)=>{let chosen=document.querySelector(`input[name="s${i}q${j}"]:checked`);qs.push({question:q,response:chosen?chosen.value:"Not recorded",note:$(`note_${i}_${j}`).value})});answers.push({stage:s[0],age:s[1],responses:qs})});let rec={id:crypto.randomUUID(),clientId:cid,date:$("assessmentDate").value||new Date().toISOString().slice(0,10),purpose:$("purpose").value,answers,strengths:$("strengths").value,concerns:$("concerns").value,observations:$("observations").value,recommendations:$("recommendations").value,created:new Date().toISOString()};assessments.push(rec);persist();currentReport=rec;renderAll();showReport(rec.id);}
+function clearAssessment(){if(!confirm("Clear the assessment form? Unsaved entries will be lost."))return;document.querySelectorAll('#assessment textarea').forEach(x=>x.value="");document.querySelectorAll('#assessment input[type=radio]').forEach(x=>x.checked=false);$("purpose").value="";}
+function showReport(id){let a=assessments.find(x=>x.id===id);if(!a)return;currentReport=a;let c=clients.find(x=>x.id===a.clientId)||{code:"Unknown client"};let stages=a.answers.map(s=>`<h3>${esc(s.stage)}</h3><p><em>${esc(s.age)}</em></p><ul>${s.responses.map(r=>`<li><strong>${esc(r.response)}:</strong> ${esc(r.question)}${r.note?`<br><em>Context: ${esc(r.note)}</em>`:""}</li>`).join("")}</ul>`).join("");$("reportContent").innerHTML=`<div style="text-align:center;border-bottom:2px solid #e9def2;padding-bottom:14px"><div style="font: bold 27px Georgia,serif;color:#7546a8">PsycheBridge</div><div style="color:#746783;font-size:12px">Understand. Assess. Empower.</div><h2>Psychosocial Development Assessment Summary</h2></div><p><strong>Client code:</strong> ${esc(c.code)} &nbsp; <strong>Assessment date:</strong> ${esc(a.date)}</p><p><strong>Reason for assessment:</strong><br>${nl(a.purpose)}</p>${stages}<h3>Strengths and protective factors</h3><p>${nl(a.strengths)}</p><h3>Current concerns / further exploration</h3><p>${nl(a.concerns)}</p><h3>Worker's observations</h3><p>${nl(a.observations)}</p><h3>Suggested next steps</h3><p>${nl(a.recommendations)}</p><div class="notice"><strong>Interpretation note:</strong> This is a structured record of interview responses, not a validated psychometric score, diagnosis or determination that a developmental stage was failed. Interpret in context, corroborate where appropriate, and use professional supervision and other assessment information.</div><p style="font-size:12px;color:#746783;border-top:1px solid #e9def2;padding-top:12px">Created and owned by Oni Fathia · PsycheBridge</p>`;showView("reportView");}
+function nl(v){return esc(v||"Not recorded").replace(/\n/g,"<br>")}
+function renderReports(){$("reportsList").innerHTML=assessments.length?assessments.slice().reverse().map(a=>{let c=clients.find(x=>x.id===a.clientId)||{code:"Unknown client"};return `<div class="card"><h3>${esc(c.code)}</h3><p>Assessment date: ${esc(a.date)}<br>${esc(a.purpose||"No referral question entered")}</p><button class="btn" onclick="showReport('${a.id}')">Open report</button> <button class="btn ghost" onclick="deleteAssessment('${a.id}')">Delete</button></div>`}).join(""):'<div class="card empty">No reports yet. Complete an assessment to create your first report.</div>'}
+function deleteAssessment(id){if(!confirm("Delete this assessment report permanently from this browser?"))return;assessments=assessments.filter(a=>a.id!==id);persist();renderAll();}
+function exportBackup(){let blob=new Blob([JSON.stringify({app:"PsycheBridge",exported:new Date().toISOString(),clients,assessments},null,2)],{type:"application/json"});download(blob,"psychebridge-backup.json")}
+function download(blob,name){let u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=name;a.click();URL.revokeObjectURL(u)}
+function renderAll(){refreshSelect();renderClients();renderReports();$("clientCount").textContent=clients.length;$("assessmentCount").textContent=assessments.length}
+$("assessmentDate").value=new Date().toISOString().slice(0,10);buildStages();renderAll();
+if("serviceWorker" in navigator && location.protocol.startsWith("http"))navigator.serviceWorker.register("./service-worker.js").catch(()=>{});
+</script>
+</body></html>
